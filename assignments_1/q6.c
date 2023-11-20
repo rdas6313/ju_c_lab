@@ -18,7 +18,7 @@ int gcd_fact(int a,int b){
 int gcd_euclid(int a,int b){
 	if(b == 0)
 		return a;
-	return gcd_fact(b,a%b);
+	return gcd_euclid(b,a%b);
 }
 
 int main(){
