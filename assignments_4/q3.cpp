@@ -2,7 +2,7 @@
 using namespace std;
 
 class Number_List{
-	int nums[100000];
+	int *nums;
 	int length;
 	public:
 		void create_array(){
@@ -10,6 +10,7 @@ class Number_List{
 			cout << "No of elements in array: ";
 			cin >> n;
 			length = n;
+			nums = new int[n];
 			cout << "Elements of array: ";
 			for(int i=0;i<n;i++)
 				cin >> nums[i];
